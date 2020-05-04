@@ -44,7 +44,7 @@ void ANSI_To_Unicode(LPCSTR fileName)
 	HANDLE handleSourceFile, handleDestinationFile;
 	CHAR ansiBuff[1024];
 	BOOL resultFile = true;
-	CHAR nameDestinationFile[] = "C:\\Users\\Acer\\Desktop\\3.2\\СП\\SP-Course\\SysProgLab1\\ConsoleApplication2\\ANSI_Text_To_Unicode.txt";
+	CHAR nameDestinationFile[] = "..\\ANSI_Text_To_Unicode.txt";
 	printf("\nРезультат можно увидеть -> %s\n", nameDestinationFile);
 
 			handleSourceFile = CreateFile(fileName, GENERIC_READ, FILE_SHARE_READ, NULL, OPEN_EXISTING, FILE_ATTRIBUTE_NORMAL, NULL);
@@ -96,7 +96,7 @@ void Unicode_To_ANSI(LPCSTR fileName)
 	CHAR rawBytesBuff[1024];
 	CHAR* ansiBuff; 
 	BOOL resultFile = true;
-	CHAR nameDestinationFile[] = "C:\\Users\\Acer\\Desktop\\3.2\\СП\\SP-Course\\SysProgLab1\\ConsoleApplication2\\Unicode_Text_To_ANSI.txt";
+	CHAR nameDestinationFile[] = "..\\Unicode_Text_To_ANSI.txt";
 	printf("\nРезультат можно увидеть -> %s\n", nameDestinationFile);
 
 			handleSourceFile = CreateFile(fileName, GENERIC_READ, FILE_SHARE_READ, NULL, OPEN_EXISTING, FILE_ATTRIBUTE_NORMAL, NULL);
